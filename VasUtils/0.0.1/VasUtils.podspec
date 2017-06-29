@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.author          = { "Komkrit Kawichai" => "Khomkrit_Kaw@truecorp.co.th" }
   s.source          = { :git => "http://git.true.th/MobileVAS/Vas_Utils_iOS.git", :tag => s.version.to_s }
   s.platform        = :ios, "8.0"
-  s.source_files    = "Classes/**/*"
+  s.source_files    = "Classes/**/*.{h,swift}"
 end
