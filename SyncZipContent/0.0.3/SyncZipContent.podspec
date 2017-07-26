@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source          = { :git => "http://git.true.th/MobileVAS/Vas_SyncZipContent_iOS.git", :tag => s.version.to_s }
   s.platform        = :ios, "8.0"
   s.source_files    = "Classes/**/*"
-  s.dependency "VasUtils", "0.0.13"
+  s.dependency "VasUtils", "0.0.14"
   s.dependency "Alamofire", "4.4.0"
 end
