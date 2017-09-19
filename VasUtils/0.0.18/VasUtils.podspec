@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.dependency 'Zip', "1.0.1"
   s.dependency 'sqlite3', "3.20.1"
   s.frameworks      = "CoreLocation"
+  s.frameworks      = "UserNotifications"
 end
