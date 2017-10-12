@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source          = { :git => "http://git.true.th/MobileVAS/FacebookSDK_iOS.git", :tag => s.version.to_s }
   s.platform        = :ios, "8.0"
   s.source_files    = "Lib/*"
-  s.dependency 'FacebookCore'
-  s.dependency 'FacebookLogin'
+  s.dependency 'FacebookCore' ,'0.2.0'
+  s.dependency 'FacebookLogin','0.2.0'
   
 end
