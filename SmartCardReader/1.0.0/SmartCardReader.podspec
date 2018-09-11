@@ -8,11 +8,15 @@ Pod::Spec.new do |s|
   s.author          = { "Siwaporn Deemongkol" => "Siwaporn_Dee@truecorp.co.th" }
   s.source          = { :git => "http://git.true.th/MobileVAS/ReadIDCard_ios.git", :tag => s.version.to_s }
   s.platform        = :ios, "8.0"
-  s.source_files    = "SmartCardReader/ReaderInterface.h"
+  s.requires_arc     = true
+  # s.xcconfig  =     { "OTHER_LDFLAGS" => "-lc++",
+  # 					  'HEADER_SEARCH_PATHS' => '$(PROJECT_DIR)/SmartCardReader/ReaderInterface.h',
+  # 					  "LIBRARY_SEARCH_PATHS" => "$(PROJECT_DIR)/SmartCardReader" }
+  # s.source_files    = "SmartCardReader/*.{h,m,a,json}","SmartCardReader/ReaderInterface.h"
+  s.resources = "SmartCardReader/*"
   s.frameworks      = "CoreBluetooth"
   s.frameworks      = "ExternalAccessory"
-  s.xcconfig  =     { "OTHER_LDFLAGS" => "-lc++",
-  					  'HEADER_SEARCH_PATHS' => '$(PROJECT_DIR)/SmartCardReader',
-  					  "LIBRARY_SEARCH_PATHS" => "$(PROJECT_DIR)/SmartCardReader" }
+  s.frameworks      = "Foundation"
+  
 end
 
