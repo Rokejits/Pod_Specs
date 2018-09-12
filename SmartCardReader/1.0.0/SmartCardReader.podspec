@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   #s.resources       = "SmartCardReader/ReaderInterface.h"
   s.source_files    = "SmartCardReader/*.{h,m}"
   s.source_files    = "SmartCardReader/ReaderInterface.h"
-  #s.frameworks      = "CoreBluetooth","ExternalAccessory"
+  s.frameworks      = "CoreBluetooth","ExternalAccessory"
   s.xcconfig = {
     'OTHER_LDFLAGS' => '$(inherited) -ObjC -lc++ -fobjc-arc'
   }
