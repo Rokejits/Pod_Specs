@@ -16,8 +16,7 @@ Pod::Spec.new do |s|
   s.library         = "z"
   s.requires_arc    = true
   s.xcconfig = {
-    'OTHER_LDFLAGS' => '-lc++',
-    'SWIFT_OBJC_BRIDGING_HEADER' => 'Source/Bridging-Header.h'
+    'OTHER_LDFLAGS' => '-lc++'
   }
   s.subspec 'OpenLib' do |openlib|
       openlib.vendored_libraries = 'ReadIDCard/SmartCardReader/lib/libiRockey301_ccid_V3.5.16_Release.a'
