@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.platform        = :ios, "9.0"
 
   s.source_files    = "ReadIDCard/SmartCardReader/**/*.*" 
+  s.resources       = "ReadIDCard/SmartCardReader/modal/error.json"
   #s.public_header_files = "ReadIDCard/SmartCardReader/winscard.h","ReadIDCard/SmartCardReader/ft301u.h","ReadIDCard/SmartCardReader/ReaderInterface.h","ReadIDCard/SmartCardReader/VSCRManager.h" ,"ReadIDCard/SmartCardReader/VSCRExecuteCommand.h"
   s.frameworks      = "CoreBluetooth","ExternalAccessory"
   s.library         = "z"
